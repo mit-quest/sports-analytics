@@ -29,7 +29,7 @@ TODO: image
 3.  Run demo script: `./run_demo`
 
 ---
-###Train your own model
+### Train your own model
 
 **Note**: Each of the following steps, from video pre-processing to running pose estimation and training player ID models, can be computationally expensive. We therefore strongly recommend proceeding with a GPU-provisioned system, and provide instructions for running pose extraction and model training on a VM.
 
