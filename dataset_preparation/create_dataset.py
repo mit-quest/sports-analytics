@@ -5,9 +5,6 @@ from pathlib import Path
 from sklearn.model_selection import train_test_split
 import yaml
 
-from prepare_keypoints import create_csv_from_keypoints
-from format_keypoints import create_formatted_csv
-
 
 def _create_player_dict(df):
 
@@ -90,13 +87,6 @@ if __name__ == '__main__':
     with Path('../configs/openpose_config.yaml').open('r') as f:
         openpose_config = yaml.safe_load(f)['openpose_config']
 
-    keypoints_bucket = openpose_config["keypoints_bucket"]
-    keypoints_mount = '/mnt/keypoints_mount'
-    keypoints_path = keypoints_mount + '/' + openpose_config["dataset_id"]
-    output_csv_path = openpose_config["dataset_id"] + "_keypoints.csv"
     formatted_csv_path = openpose_config["dataset_id"] + "_formatted.csv"
-
-    create_csv_from_keypoints(keypoints_path, output_csv_path)
-    create_formatted_csv(output_csv_path, formatted_csv_path)
 
     x_train, y_train, x_test, y_test = create_test_train(formatted_csv_path)
