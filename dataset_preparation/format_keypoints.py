@@ -38,7 +38,7 @@ def _get_frames_per_clip(kp_df, N_FRAMES):
 
 # split clip keypoints into clips of n frames each
 
-def _split_clips(kp_df, frames_dict, N_FRAMES):
+def _split_clips(kp_df, frames_dict):
 
     clip_kps = {}
 
@@ -82,9 +82,10 @@ def create_formatted_csv(input_csv, output_csv):
     # load keypoints df
     kp_df = pd.read_csv(input_csv)
 
+    # split clips into N_Frames
     frames_dict = _get_frames_per_clip(kp_df)
-
     df = _split_clips(kp_df, frames_dict)
 
-    # save dataframe
     df.to_csv(output_csv, index=False)
+
+    return df
