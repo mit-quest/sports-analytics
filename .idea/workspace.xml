@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/extract_keypoints.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/format_data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/gcp.tf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/install_openpose.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/machine-creation.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/scripts/install_openpose.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/scripts/machine-creation.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/terraform.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_ingestion/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset_preparation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/local_setup.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/prepare_videos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/barcelona_demo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pose_extraction/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extract_keypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/format_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/gcp.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp.tf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/machine-creation.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/machine-creation.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/scripts/install_openpose.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/scripts/machine-creation.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/terraform.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfvars" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +33,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/format_data.py">
+        <entry file="file://$PROJECT_DIR$/train/train.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset_preparation/format_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="135">
               <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -47,26 +59,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="420">
-                <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <first_editor relative-caret-position="225">
+                <caret line="7" column="329" selection-start-line="7" selection-start-column="329" selection-end-line="7" selection-end-column="329" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extract_keypoints.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pose_extraction/extract_keypoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#17#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="45">
+              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -90,7 +99,18 @@
         <option value="$PROJECT_DIR$/extract_keypoints.py" />
         <option value="$PROJECT_DIR$/format_data.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/docs/prepare_videos.md" />
+        <option value="$PROJECT_DIR$/data_ingestion/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pose_extraction/terraform_howto.md" />
+        <option value="$PROJECT_DIR$/docs/local_setup.md" />
+        <option value="$PROJECT_DIR$/terraform.tfvars" />
+        <option value="$PROJECT_DIR$/pose_extraction/install_openpose.sh" />
+        <option value="$PROJECT_DIR$/pose_extraction/README.md" />
+        <option value="$PROJECT_DIR$/train/train.py" />
+        <option value="$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh" />
+        <option value="$PROJECT_DIR$/configs/openpose.yaml" />
+        <option value="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" />
       </list>
     </option>
   </component>
@@ -112,6 +132,26 @@
               <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
               <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="pose_extraction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -128,6 +168,13 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pose_extraction" />
+      <recent name="$PROJECT_DIR$/dataset_preparation" />
+      <recent name="$PROJECT_DIR$/scripts" />
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pose_extraction" />
     </key>
@@ -162,12 +209,12 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="210000" />
+      <workItem from="1578881225968" duration="8388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32869000" />
+    <option name="totallyTimeSpent" value="41047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1602" height="938" extended-state="0" />
@@ -208,9 +255,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/format_data.py">
+    <entry file="file://$PROJECT_DIR$/data_ingestion/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="330">
+            <caret line="18" column="86" lean-forward="true" selection-start-line="18" selection-start-column="86" selection-end-line="18" selection-end-column="86" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/local_setup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="540">
+            <caret line="18" column="45" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/install_openpose.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/terraform_howto.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="658">
+            <caret line="38" selection-start-line="38" selection-end-line="40" selection-end-column="48" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/machine-creation.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-37" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/prepare_videos.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="585">
+            <caret line="28" column="98" selection-start-line="28" selection-start-column="98" selection-end-line="28" selection-end-column="98" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/install_openpose.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/terraform.tfvars">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gcp.tf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="789">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="163">
+            <caret line="29" column="107" selection-start-line="29" selection-start-column="107" selection-end-line="29" selection-end-column="107" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_preparation/format_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
           <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -218,40 +357,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pose_extraction/gcp.tf">
+    <entry file="file://$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-487">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extract_keypoints.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="420">
-            <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <first_editor relative-caret-position="225">
+            <caret line="7" column="329" selection-start-line="7" selection-start-column="329" selection-end-line="7" selection-end-column="329" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/openpose_config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/extract_keypoints.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>

@@ -1,5 +1,5 @@
-import extract_keypoints
-import format_data
+from pose_extraction import extract_keypoints
+from dataset_preparation import format_data
 
 CLIPS_DIR = '/path/to/clips/directory'
 KEYPOINTS_DIR = '/path/to/save/keypoints'
