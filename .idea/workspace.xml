@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset_preparation/create_dataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_preparation/format_keypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/format_keypoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset_preparation/prepare_keypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/prepare_keypoints.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_preparation/create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/create_dataset.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataset_preparation/create_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+            <state relative-caret-position="202">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -239,12 +236,12 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="14316000" />
+      <workItem from="1578881225968" duration="14708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46975000" />
+    <option name="totallyTimeSpent" value="47367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="122" width="1602" height="938" extended-state="0" />
@@ -456,8 +453,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset_preparation/create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="83" column="34" selection-start-line="83" selection-start-column="34" selection-end-line="83" selection-end-column="34" />
+        <state relative-caret-position="202">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

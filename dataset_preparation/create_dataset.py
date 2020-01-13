@@ -72,6 +72,18 @@ def create_test_train(formatted_csv_path):
 
     x, y = _playerID_data(df)
 
+    x = np.array(x, dtype='float32')
+    y = np.array(y, dtype='float32')
+
+    x = np.expand_dims(x, axis=3)
+    x = np.expand_dims(x, axis=4)
+
+    y = np.expand_dims(y, axis=1)
+
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
+
+    return x_train, y_train, x_test, y_test
+
 
 if __name__ == '__main__':
 
@@ -87,4 +99,4 @@ if __name__ == '__main__':
     create_csv_from_keypoints(keypoints_path, output_csv_path)
     create_formatted_csv(output_csv_path, formatted_csv_path)
 
-    create_test_train(formatted_csv_path)
+    x_train, y_train, x_test, y_test = create_test_train(formatted_csv_path)
