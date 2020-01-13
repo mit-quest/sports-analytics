@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_ingestion/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset_preparation/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/local_setup.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/prepare_videos.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/barcelona_demo.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/train/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extract_keypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/format_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/format_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/gcp.tf" beforeDir="false" afterPath="$PROJECT_DIR$/gcp.tf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/machine-creation.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/machine-creation.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/scripts/install_openpose.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/scripts/machine-creation.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_extraction/terraform.tfvars" beforeDir="false" afterPath="$PROJECT_DIR$/terraform.tfvars" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pose_extraction/run_openpose.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +54,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pose_extraction/extract_keypoints.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+            <state relative-caret-position="69">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pose_extraction/run_openpose.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,6 +106,7 @@
         <option value="$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh" />
         <option value="$PROJECT_DIR$/configs/openpose.yaml" />
         <option value="$PROJECT_DIR$/pose_extraction/extract_keypoints.py" />
+        <option value="$PROJECT_DIR$/pose_extraction/run_openpose.sh" />
       </list>
     </option>
   </component>
@@ -209,12 +205,12 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="8388000" />
+      <workItem from="1578881225968" duration="9287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41047000" />
+    <option name="totallyTimeSpent" value="41946000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1602" height="938" extended-state="0" />
@@ -383,8 +379,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pose_extraction/extract_keypoints.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="69">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/run_openpose.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
         </state>
       </provider>
     </entry>

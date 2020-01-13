@@ -1,4 +1,4 @@
-from multiprocessing import pool
+from multiprocessing import Pool
 import os
 from pathlib import Path
 import subprocess
@@ -7,23 +7,33 @@ import yaml
 
 def run_openpose(clip_path):
 
-    subprocess.call(['./run_openpose.sh', clip_path, player, str(int(start_time)), dir])
+    subprocess.call(['./run_openpose.sh', clip_path])
 
 
-def get_clip_paths(clips_mount):
+def _make_player_dir(subdir):
+
+    os.environ["player_dir"] = subdir
+    subprocess.call(['mkdir $player_dir'])
+
+
+def get_clip_paths(clips_mount, keypoints_mount):
+
+    clip_paths_list = []
 
     directory = os.fsencode(clips_mount)
 
-    clip_paths = []
-
     for subdir in os.listdir(directory):
+
+        player_dir = keypoints_mount + '/' + subdir
+        _make_player_dir(player_dir)
+
         for file in os.listdir(subdir):
 
             filename = os.fsdecode(file)
             clip_path = subdir + '/' + filename
-            clip_paths.append(clip_path)
+            clip_paths_list.append(clip_path)
 
-    return clip_paths
+    return clip_paths_list
 
 
 def mount_buckets(clips_bucket, keypoints_bucket):
@@ -55,7 +65,7 @@ if __name__ == '__main__':
 
     mount_buckets(clips_bucket, clips_mount, keypoints_bucket, keypoints_mount)
 
-    clip_paths = get_clip_paths(clips_mount)
+    clip_paths = get_clip_paths(clips_mount, keypoints_mount)
 
     pool = Pool()  # Create a multiprocessing Pool
     pool.map(run_openpose, clip_paths)
