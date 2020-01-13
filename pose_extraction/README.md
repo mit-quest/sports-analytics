@@ -41,8 +41,8 @@ Infrastructure that will be used:
 
 1. After the VMs have been created, you can `ssh` into the VM `<project_name>-<user_name>`, either using the one-click SSH that GCP provides through their [console](console.cloud.google.com), the GCP SDK, or simply via `ssh username@externalIPaddress`
 
-1. In the `ssh` window, enter: `./pose_extraction/install_openpose.sh && ./pose_extraction/run_openpose.sh`
+1. In the `ssh` window, enter: `python extract_keypoints.py`
 
-1. Once dataset preparation has finished, you should see the folder `<gcp_bucket>/datasets/<dataset_ID>` has been created and populated, where `<dataset_ID>` was defined in `configs/openpose.yaml`.
+1. Once skeletal extraction has finished, you should see the folder `<gcp_bucket>/datasets/<dataset_ID>` has been created and populated, where `<dataset_ID>` was defined in `configs/openpose.yaml`.
 
-1. Use `terraform destroy` to terminate the appropriate GCP virtual machine. Once Terraform finishes, you can check the GCP console to ensure the VM has been destroyed.
+1. Continue to [dataset preparation](../dataset_preparation/README.md)

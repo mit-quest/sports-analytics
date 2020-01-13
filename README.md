@@ -9,7 +9,7 @@ Using pose estimation models, such as [CMU’s OpenPose](https://github.com/CMU-
 
 * [data ingestion](data_ingestion): copying prepared video data into the cloud for storage and usage
 * [pose extraction](pose_extraction): extracting skeletal keypoints from videos with OpenPose
-* [dataset preparation](dataset_preparation): preparing a dataset for training and testing of a player identification model
+* [dataset preparation](dataset_preparation): preparing a dataset for training and testing a player identification model
 * [training](train): training a player identification model on a prepared dataset
 * [testing](test): testing a pretrained player identification model on a prepared dataset
 
@@ -26,8 +26,6 @@ TODO: image
 
 ---
 
-
-#### **3. Prepare a dataset for training and testing of a player identification model**
 
 #### **4. Train a player identification model**
 
