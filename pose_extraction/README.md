@@ -10,7 +10,7 @@ Infrastructure that will be used:
 
 ### Workflow
 
-1. If the clips are not in a GCP bucket, see the previous workflow [Copy prepared video data into the cloud for storage and usage]().
+1. If the clips are not in a GCP bucket, see the previous workflow [Copy prepared video data into the cloud for storage and usage](../data_ingestion/README.md).
 
 1. If you have not already, follow the [local setup instructions](docs/local_setup.md) to install the GCP SDK and Terraform.
 

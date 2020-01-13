@@ -5,8 +5,8 @@ Prerequisite artifacts:
 
 Infrastructure that will be used
 * A GCP bucket where the extracted keypoints will be accessed from
-* A GCP virtual machine to run OpenPose on
+* A GCP virtual machine to prepare the datasets on
 
 ### Workflow
 
-1. If the clips are not in a GCP bucket, see the previous workflow [Copy prepared video data into the cloud for storage and usage]().
+1. If the skeletal keypoints are not in a GCP bucket, see the previous workflow [Extract skeletal keypoints from videos with OpenPose]().

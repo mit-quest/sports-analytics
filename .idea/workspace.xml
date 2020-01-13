@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset_preparation/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_preparation/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pose_extraction/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/pose_extraction/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,12 +37,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset_preparation/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="150">
-                <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="42" />
+              <first_editor relative-caret-position="240">
+                <caret line="11" column="135" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pose_extraction/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="225">
+                <caret line="12" column="158" selection-start-line="12" selection-start-column="158" selection-end-line="12" selection-end-column="158" />
               </first_editor>
               <second_editor />
             </state>
@@ -181,12 +192,12 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="9726000" />
+      <workItem from="1578881225968" duration="9817000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42385000" />
+    <option name="totallyTimeSpent" value="42476000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="23" width="1602" height="938" extended-state="0" />
@@ -360,21 +371,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pose_extraction/README.md">
+    <entry file="file://$PROJECT_DIR$/dataset_preparation/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="703">
-            <caret line="47" column="31" selection-start-line="47" selection-start-column="31" selection-end-line="47" selection-end-column="31" />
+          <first_editor relative-caret-position="240">
+            <caret line="11" column="135" selection-start-line="11" selection-start-column="135" selection-end-line="11" selection-end-column="135" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_preparation/README.md">
+    <entry file="file://$PROJECT_DIR$/pose_extraction/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="42" />
+          <first_editor relative-caret-position="225">
+            <caret line="12" column="158" selection-start-line="12" selection-start-column="158" selection-end-line="12" selection-end-column="158" />
           </first_editor>
           <second_editor />
         </state>
