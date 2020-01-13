@@ -10,8 +10,8 @@ Using pose estimation models, such as [CMU’s OpenPose](https://github.com/CMU-
 * [data ingestion](data_ingestion): copying prepared video data into the cloud for storage and usage
 * [pose extraction](pose_extraction): extracting skeletal keypoints from videos with OpenPose
 * [dataset preparation](dataset_preparation): preparing a dataset for training and testing a player identification model
-* [training](train): training a player identification model on a prepared dataset
-* [testing](test): testing a pretrained player identification model on a prepared dataset
+* [training](train): training and testing a player identification model on a prepared dataset
+* [inference](infer): using a pretrained player identification model with a prepared dataset
 
 Before running any of these workflows, you'll need to [set up your local machine](docs/local_setup.md) and [have a GCP account ready](https://cloud.google.com/). You may also want to look through [assumed knowledge](). TO DO: add link
 
