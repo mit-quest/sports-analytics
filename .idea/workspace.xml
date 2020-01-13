@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dataset_preparation/create_dataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_preparation/create_dataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/train/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,13 +48,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset_preparation/create_dataset.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="202">
               <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/train/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,7 +106,6 @@
         <option value="$PROJECT_DIR$/docs/local_setup.md" />
         <option value="$PROJECT_DIR$/terraform.tfvars" />
         <option value="$PROJECT_DIR$/pose_extraction/install_openpose.sh" />
-        <option value="$PROJECT_DIR$/train/train.py" />
         <option value="$PROJECT_DIR$/pose_extraction/gcsfuse_setup.sh" />
         <option value="$PROJECT_DIR$/configs/openpose.yaml" />
         <option value="$PROJECT_DIR$/pose_extraction/run_openpose.sh" />
@@ -109,6 +120,7 @@
         <option value="$PROJECT_DIR$/dataset_preparation/prepare_keypoints.py" />
         <option value="$PROJECT_DIR$/dataset_preparation/test.py" />
         <option value="$PROJECT_DIR$/dataset_preparation/create_dataset.py" />
+        <option value="$PROJECT_DIR$/train/train.py" />
       </list>
     </option>
   </component>
@@ -149,6 +161,11 @@
               <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
               <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
               <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sports-analytics" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sports-analytics" type="462c0819:PsiDirectoryNode" />
+              <item name="train" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -236,23 +253,23 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="14708000" />
+      <workItem from="1578881225968" duration="14931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47367000" />
+    <option name="totallyTimeSpent" value="47590000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="100" y="122" width="1602" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,9 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train/train.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/machine-creation.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="735">
@@ -457,6 +471,16 @@
           <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
