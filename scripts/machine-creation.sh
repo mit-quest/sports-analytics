@@ -47,6 +47,6 @@ sudo apt-get install -y cmake \
 	xinit
 
 # install common python packages
-pip3 install tensorflow-gpu torch torchvision ipython jupyter keras opencv-python
+pip3 install tensorflow-gpu torch torchvision ipython jupyter keras opencv-python screen
 pip install --upgrade google-cloud-bigquery
 pip install --upgrade google-cloud-storage

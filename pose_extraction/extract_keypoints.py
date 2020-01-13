@@ -67,5 +67,6 @@ if __name__ == '__main__':
 
     clip_paths = get_clip_paths(clips_mount, keypoints_mount)
 
+    subprocess.call(['screen'])
     pool = Pool()  # Create a multiprocessing Pool
     pool.map(run_openpose, clip_paths)

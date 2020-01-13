@@ -41,7 +41,7 @@ Infrastructure that will be used:
 
 1. After the VMs have been created, you can `ssh` into the VM `<project_name>-<user_name>`, either using the one-click SSH that GCP provides through their [console](console.cloud.google.com), the GCP SDK, or simply via `ssh username@externalIPaddress`
 
-1. In the `ssh` window, enter: `python extract_keypoints.py`
+1. In the `ssh` window, enter: `python extract_keypoints.py`. This step, which installs and runs OpenPose, will take a considerable amount of time. `screen` is invoked before OpenPose is run; to detach the screen & safely leave the process running, enter `ctrl + a + d`
 
 1. Once skeletal extraction has finished, you should see the folder `<gcp_bucket>/datasets/<dataset_ID>` has been created and populated, where `<dataset_ID>` was defined in `configs/openpose.yaml`.
 

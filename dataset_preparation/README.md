@@ -9,4 +9,6 @@ Infrastructure that will be used
 
 ### Workflow
 
-1. If the skeletal keypoints are not in a GCP bucket, see the previous workflow [Extract skeletal keypoints from videos with OpenPose]().
+1. If the skeletal keypoints are not in a GCP bucket, see the previous workflow [Extract skeletal keypoints from videos with OpenPose](../pose_extraction/README.md).
+
+1. At this point, after following the previous steps, you should have a GCP VM on which is mounted 
