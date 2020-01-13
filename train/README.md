@@ -1,12 +1,16 @@
 ### Prepare a dataset for training and testing a player identification model
 
 Prerequisite artifacts:
-* Skeletal keypoints (in a GCP bucket) we will use to create train and test sets
+* A formatted dataset CSV (in a GCP bucket) we will use to create train and test sets
 
 Infrastructure that will be used:
-* A GCP bucket where the extracted keypoints will be accessed from & prepared datasets are written to
-* A GCP virtual machine to prepare the datasets on
+* A GCP bucket where the dataset CSV will be accessed from & model files are written to
+* A GCP virtual machine to train on
 
 ### Workflow
 
-1. If the skeletal keypoints are not in a GCP bucket, see the previous workflow [Extract skeletal keypoints from videos with OpenPose](../pose_extraction/README.md).
+1. If you do not already have a formatted dataset CSV, see the previous workflow [Prepare a dataset for training and testing a player identification model](../dataset_preparation/README.md).
+
+1. If you have continued from the previous workflow, you should still be `ssh`ed into a GCP VM with all relevant files available at their respective mount points.
+
+1. In the `ssh` session, enter `python train/train.py`.

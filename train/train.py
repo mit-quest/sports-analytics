@@ -5,6 +5,10 @@ from keras.layers.convolutional_recurrent import ConvLSTM2D
 from keras.layers import Dense, Reshape
 from keras.layers.normalization import BatchNormalization
 
+from pathlib import Path
+import yaml
+
+from create_dataset import create_test_train
 
 
 def run_LSTM(x_train, y_train, x_test, y_test):
@@ -75,3 +79,13 @@ def _build_model(num_players, n_samples, n_frames, filters, kernel_size):
     model.add(Dense(units=num_players, activation='softmax'))
 
     return model
+
+
+if __name__ == '__main__':
+
+    with Path('../configs/openpose_config.yaml').open('r') as f:
+        openpose_config = yaml.safe_load(f)['openpose_config']
+
+    formatted_csv_path = openpose_config["dataset_id"] + "_formatted.csv"
+
+    x_train, y_train, x_test, y_test = create_test_train(formatted_csv_path)

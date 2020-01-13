@@ -1,9 +1,7 @@
 import ast
 import numpy as np
 import pandas as pd
-from pathlib import Path
 from sklearn.model_selection import train_test_split
-import yaml
 
 
 def _create_player_dict(df):
@@ -80,13 +78,3 @@ def create_test_train(formatted_csv_path):
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
     return x_train, y_train, x_test, y_test
-
-
-if __name__ == '__main__':
-
-    with Path('../configs/openpose_config.yaml').open('r') as f:
-        openpose_config = yaml.safe_load(f)['openpose_config']
-
-    formatted_csv_path = openpose_config["dataset_id"] + "_formatted.csv"
-
-    x_train, y_train, x_test, y_test = create_test_train(formatted_csv_path)
