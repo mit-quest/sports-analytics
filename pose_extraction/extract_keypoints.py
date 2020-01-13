@@ -16,7 +16,7 @@ def _make_player_dir(subdir):
     subprocess.call(['mkdir $player_dir'])
 
 
-def get_clip_paths(clips_mount, keypoints_mount):
+def get_clip_paths(clips_mount, keypoints_path):
 
     clip_paths_list = []
 
@@ -24,7 +24,7 @@ def get_clip_paths(clips_mount, keypoints_mount):
 
     for subdir in os.listdir(directory):
 
-        player_dir = keypoints_mount + '/' + subdir
+        player_dir = keypoints_path + '/' + subdir
         _make_player_dir(player_dir)
 
         for file in os.listdir(subdir):
@@ -60,10 +60,11 @@ if __name__ == '__main__':
     clips_mount = '/mnt/clips_mount'
     keypoints_bucket = openpose_config["keypoints_bucket"]
     keypoints_mount = '/mnt/keypoints_mount'
+    keypoints_path = keypoints_mount + '/' + openpose_config["dataset_id"]
 
     subprocess.call(['./install_openpose.sh'])
 
-    mount_buckets(clips_bucket, clips_mount, keypoints_bucket, keypoints_mount)
+    mount_buckets(clips_bucket, clips_mount, keypoints_bucket, keypoints_path)
 
     clip_paths = get_clip_paths(clips_mount, keypoints_mount)
 
