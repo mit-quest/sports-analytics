@@ -1,0 +1,12 @@
+username = "your-username-here"
+project_name = "your-gcp-project-name-here"
+account_key_file_location = "./keys/mit-fifa-292cd8b67702.json"
+public_ssh_key_location = "~/.ssh/google_compute_engine.pub"
+private_ssh_key_location = "~/.ssh/google_compute_engine"
+number_of_machines = 1
+hard_drive_size_gp = "200"
+ram_size_mb = "25600"
+number_of_cpus = "8"
+gpu_type = "nvidia-tesla-k80"
+//gpu_type = "nvidia-tesla-p100"
+number_of_gpus = "1"

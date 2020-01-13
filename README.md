@@ -7,38 +7,24 @@ The way that professional athletes play their sport is sufficiently unique that 
 
 Using pose estimation models, such as [CMU’s OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose), we extract key points representing athletes’ skeletal positions from video recordings of their competitions. These skeletal key points are then used to train a neural network to predict a particular athlete’s identity from unseen footage. To accomplish this, there are five workflows that this repository supports:
 
-* copying prepared video data into the cloud for storage and usage
-* extracting skeletal keypoints from videos with OpenPose
-* preparing a dataset for training and testing of a player identification model
-* training a player identification model on a prepared dataset
-* testing a pretrained player identification model on a prepared dataset
+* [data ingestion](data_ingestion): copying prepared video data into the cloud for storage and usage
+* [pose extraction](pose_extraction): extracting skeletal keypoints from videos with OpenPose
+* [dataset preparation](dataset_preparation): preparing a dataset for training and testing of a player identification model
+* [training](train): training a player identification model on a prepared dataset
+* [testing](test): testing a pretrained player identification model on a prepared dataset
 
 ---
 ### Demo
 
-We've provided a script that will automatically download a prepared dataset and run a pretrained player identification model.
+We've provided a [Colab notebook]() that will automatically download a prepared dataset and run a pretrained player identification model.
 
 The demo dataset was curated from videos of two matches at Wimbledon 2018 provided by the [Wimbledon YouTube Channel](https://www.youtube.com/wimbledon). The model was trained on clips from [Novak Djokovic vs Rafael Nadal](https://www.youtube.com/watch?v=V96sSCV03ng) and is tested on unseen clips from that match (88.6% accuracy: Nadal 83.5%, Del Potro 95.5%), as well as clips from [Juan Martin del Potro vs Rafael Nadal](https://www.youtube.com/watch?v=S5LVbZUgM48) (76.5% accuracy: Nadal 86.5%, ”not Nadal” 65.2%).
 
 TODO: image
 
-1. Open a terminal and clone this repository:
-`git clone git@github.com:mit-quest/sports-analytics.git`
-
-2. Enter main directory: `cd sports-analytics`
-
-3.  Run demo script: `./run_demo`
-
-If you do not have `git` installed, see [here]() for installation instructions. TODO: add link/link content
-
 ---
 ### Prerequisites for all workflows
 **Note**: Each of the following steps, from video pre-processing to running pose estimation and training player ID models, can be computationally expensive. We therefore strongly recommend proceeding with a GPU-provisioned system, and provide instructions for running pose extraction and model training on a VM.
-
-**Suggested background**
-* [Python 1]()
-* [Cloud 1]()
-* [Applied ML: Image 2]() 
 
 #### Clone this repository
 If you have not done so already, in a terminal window, enter `git clone git@github.com:mit-quest/sports-analytics.git`
@@ -66,7 +52,23 @@ Run the command `pipenv install` to set up the virtual environment and download 
 ### Workflows
 #### **0. Prepare video data**
 
-For player identification, your data should consist of a single directory containing a subdirectory with clips for each player.* Each clip should ideally contain only that one individual, but multi-person clips where the individual is the primary focus in the foreground will work as well if you are using our provided configuration of OpenPose to extract skeletal key points.
+For player identification, your data should consist of a single directory containing *n* subdirectories with mp4 clips for each of *n* players.* 
+
+```
+.
++-- player1
+|   +-- clip1.mp4
+|   +-- ...
+|   +-- clipj.mp4
++-- player2
+|   +-- clip1.mp4
+|   +-- ...
+|   +-- clipk.mp4
++-- ...
++-- playern
+```
+
+Each clip in a directory should ideally display only the individual named by the directory, but multi-person clips where the individual is the primary focus in the foreground will work as well if you are using our provided configuration of OpenPose to extract skeletal key points.
 
 Given the specificity of each use case, we leave it up to you to prepare your video data appropriately. However, if you are interested in learning more about the video pre-processing pipeline we used for the above demo, you can read about it in our [Notes](#video-preprocessing).
 
@@ -75,19 +77,42 @@ Given the specificity of each use case, we leave it up to you to prepare your vi
 #### **1. Copy prepared video data into the cloud for storage and usage**
 
 Prerequisite artifacts:
-* Stacks of images and annotations that we wish to use in the other workflows on your local machine
+* A directory of prepared video clips (see [Workflow 0: Prepare video data](#0-prepare-video-data))
 
 Infrastructure that will be used:
-* A GCP bucket where the stacks will be stored
-* Your local machine to upload the stacks to the GCP bucket
+* A GCP bucket where the videos will be stored
+* Your local machine to upload the videos to the GCP bucket
 
-### Workflow
+#### Workflow
 
-1. To copy the unsegmented stacks to a GCP bucket run the command: `pipenv run python3 ingest_data_to_gcp.py --local-stacks-dir <local_stacks_dir> --gcp-bucket <gcp_bucket>` where `<local_stacks_dir>` is the local directory where the stacks are stored and `<gcp_bucket>` is the bucket where our artifacts will be stored. 
-1. When this completes, you should see all of your stacks in `<gcp_bucket>/data/ingested/<stack_ID>` where `<stack_ID>` are the names of the directories inside of `<local_stacks_dir>`.
+1. In a terminal window, enter:
+
+`gsutil mb gs://[BUCKET_NAME]/`
+
+where [BUCKET_NAME]  is the name you'd like for your GCP storage bucket.
+
+1. After your bucket has been created, copy all of the data in your local directory into the bucket:
+
+`gsutil -m cp -r [PATH_TO_LOCAL_DIRECTORY] gs://[BUCKET_NAME]/`
+
+1. When this completes, you should see all of your video data at `gs://[BUCKET_NAME]/`.
 
 
 #### **2. Extract skeletal keypoints from videos with OpenPose**
+
+Prerequisite artifacts:
+* Prepared mp4 clips (in a GCP bucket) from which we will extract skeletal keypoints
+
+Infrastructure that will be used:
+* A GCP bucket where the videos will be accessed from
+* A GCP bucket where the extracted keypoints will be stored
+* A GCP virtual machine to run OpenPose on
+
+#### Workflow
+
+1. If the clips are not in a GCP bucket, see the previous workflow [Copy prepared video data into the cloud for storage and usage]().
+ 
+1. In a terminal window, enter: 
 
 #### **3. Prepare a dataset for training and testing of a player identification model**
 
@@ -109,7 +134,7 @@ The training clips should be representative of the footage that will be used in 
 
 #### Video Preprocessing
 
-Perhaps the largest obstacle to large-scale player identification is not actually identifying the players, but rather collecting a
+Perhaps the largest obstacle to large-scale player identification is not actually identifying the players, but rather collecting a sufficient amount of appropriate footage for each player.
 
 
 #### Pose Estimation
