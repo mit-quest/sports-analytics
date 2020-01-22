@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ecc732cf-fa8d-4af0-a810-48dda2eee85e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="424">
-                <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <first_editor relative-caret-position="255">
+                <caret line="8" column="248" selection-start-line="8" selection-start-column="248" selection-end-line="8" selection-end-column="248" />
               </first_editor>
               <second_editor />
             </state>
@@ -39,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
+            <state relative-caret-position="1200">
               <caret line="90" column="75" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
               <folding>
                 <element signature="e#0#58#0" expanded="true" />
@@ -52,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/train/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
+              <first_editor relative-caret-position="225">
                 <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
               </first_editor>
               <second_editor />
@@ -106,8 +107,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="100" />
-    <option name="y" value="122" />
+    <option name="x" value="78" />
+    <option name="y" value="32" />
     <option name="width" value="1602" />
     <option name="height" value="938" />
   </component>
@@ -229,23 +230,25 @@
       <workItem from="1571950781938" duration="1068000" />
       <workItem from="1575400094383" duration="2367000" />
       <workItem from="1578423423934" duration="8741000" />
-      <workItem from="1578881225968" duration="16088000" />
+      <workItem from="1578881225968" duration="16238000" />
+      <workItem from="1578939401550" duration="201000" />
+      <workItem from="1579273743544" duration="2447000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48747000" />
+    <option name="totallyTimeSpent" value="51545000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="100" y="122" width="1602" height="938" extended-state="0" />
+    <frame x="78" y="32" width="1602" height="938" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28141025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32978722" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,19 +301,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pose_extraction/install_openpose.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pose_extraction/terraform_howto.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="658">
-            <caret line="38" selection-start-line="38" selection-end-line="40" selection-end-column="48" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pose_extraction/terraform_howto.md" />
     <entry file="file://$PROJECT_DIR$/docs/prepare_videos.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -397,13 +388,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset_preparation/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_preparation/test.py" />
     <entry file="file://$PROJECT_DIR$/dataset_preparation/format_keypoints.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="596">
@@ -431,16 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train/create_dataset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -453,7 +428,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/train/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="1200">
           <caret line="90" column="75" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
           <folding>
             <element signature="e#0#58#0" expanded="true" />
@@ -461,11 +436,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/train/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ganocracy_website/tutorial/tutorial.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-532" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ganocracy_website/tutorial/more_resources.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="214" column="30" lean-forward="true" selection-start-line="214" selection-start-column="30" selection-end-line="214" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ganocracy_website/tutorial/tutorial.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="191" selection-start-line="191" selection-end-line="266" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="424">
-            <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <first_editor relative-caret-position="255">
+            <caret line="8" column="248" selection-start-line="8" selection-start-column="248" selection-end-line="8" selection-end-column="248" />
           </first_editor>
           <second_editor />
         </state>

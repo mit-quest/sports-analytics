@@ -2,6 +2,7 @@
 ## Pose-based player identification from  video
 
 ![](img/barcelona_demo.gif)
+<sub>*Skeletal key point estimation on soccer players using [OpenPose](https://github.com/CMU-Perceptual-Computing-Lab/openpose)*</sub>
 
 The way that professional athletes play their sport is sufficiently unique that just a few moves on the field or court can be enough for a computer vision model to distinguish them from their teammates and competitors.
 
