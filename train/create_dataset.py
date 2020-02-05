@@ -7,7 +7,6 @@ from sklearn.model_selection import train_test_split
 def _create_player_dict(df):
 
     player_names = df.Player.unique()
-
     player_dict = dict()
 
     for i, name in enumerate(player_names):
@@ -25,7 +24,6 @@ def _create_clip_kps(df, clip):
     for lst in clip_kps:
 
         lst = ast.literal_eval(lst)
-
         new_lst = []
 
         for i, s in enumerate(lst):
@@ -77,4 +75,4 @@ def create_test_train(formatted_csv_path):
 
     x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2)
 
-    return x_train, y_train, x_test, y_test
+    return [x_train, y_train, x_test, y_test]

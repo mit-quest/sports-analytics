@@ -13,4 +13,10 @@ Infrastructure that will be used:
 
 1. If you have continued from the previous workflow, you should still be `ssh`ed into a GCP VM with all relevant files available at their respective mount points.
 
+#### Training a new model
+
 1. In the `ssh` session, enter `python train/train.py`.
+
+#### Testing a trained model
+
+1. In the `ssh` session, enter `python train/test.py`.

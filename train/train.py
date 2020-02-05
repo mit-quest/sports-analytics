@@ -11,11 +11,13 @@ import yaml
 from create_dataset import create_test_train
 
 
-def run_LSTM(x_train, y_train, x_test, y_test):
+def _train_model(dataset, results_dir):
+
+    x_train, y_train, x_test, y_test = dataset
 
     num_players = y_train.shape[2]
 
-    best_model_path = ''
+    best_model_path = results_dir + '/best_model'
 
     model = _build_model(num_players, x_train.shape[1], x_train.shape[2], 25, (5, 5))
 
@@ -47,7 +49,7 @@ def _build_model(num_players, n_samples, n_frames, filters, kernel_size):
 
     # First layer takes as input pose configurations of shape
     # (samples, n_frames, rows, cols, channels)
-    # Model outputs a binary classification of player ID
+    # Model outputs a classification of player ID
 
     model.add(ConvLSTM2D(filters=filters, kernel_size=kernel_size,
                          input_shape=(n_samples, n_frames, 1, 1),
@@ -86,6 +88,12 @@ if __name__ == '__main__':
     with Path('../configs/openpose_config.yaml').open('r') as f:
         openpose_config = yaml.safe_load(f)['openpose_config']
 
+    results_dir = Path('./results')
+    if not results_dir.is_file():
+        results_dir.mkdir(parents=True, exist_ok=True)
+
     formatted_csv_path = openpose_config["dataset_id"] + "_formatted.csv"
 
-    x_train, y_train, x_test, y_test = create_test_train(formatted_csv_path)
+    dataset = create_test_train(formatted_csv_path)
+
+    _train_model(dataset, results_dir)
