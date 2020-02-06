@@ -36,19 +36,21 @@ def _create_clip_kps(df, clip):
 
 
 # create x, y for player identification
-def _playerID_data(df):
+def _player_data(df):
 
     x = []
     y = []
 
     clips = list(df.columns.values.tolist())
 
+    # create dict of player names to numeric ids
+    # (numeric ids are 0 - n for all n players in data)
     player_dict = _create_player_dict(df)
 
+    # associate each player's clips to their numeric id
     for clip in clips:
 
         player = df['Player']
-
         onehot_player = player_dict[player]
 
         clip_kps = _create_clip_kps(df, clip)
@@ -63,7 +65,7 @@ def create_test_train(formatted_csv_path):
 
     df = pd.read_csv(formatted_csv_path)
 
-    x, y = _playerID_data(df)
+    x, y = _player_data(df)
 
     x = np.array(x, dtype='float32')
     y = np.array(y, dtype='float32')
