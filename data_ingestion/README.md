@@ -1,7 +1,7 @@
 ## Copy prepared video data into the cloud for storage and usage
 
 Prerequisite artifacts:
-* A directory of prepared video clips (see [Workflow 0: Prepare video data](docs/prepare_videos.md))
+* A directory of prepared video clips (see [Workflow 0: Prepare video data](../docs/prepare_videos.md))
 
 Infrastructure that will be used:
 * A GCP bucket where the videos will be stored
